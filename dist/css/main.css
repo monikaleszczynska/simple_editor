@@ -313,9 +313,9 @@ html {
           box-sizing: border-box;
   font-family: "Maven Pro";
   background: black;
-  background: -webkit-linear-gradient(317deg, black 15%, #03ebe4 100%);
-  background: -o-linear-gradient(317deg, black 15%, #03ebe4 100%);
-  background: linear-gradient(133deg, black 15%, #03ebe4 100%); }
+  background: -webkit-linear-gradient(317deg, black 5%, #03ebe4 100%);
+  background: -o-linear-gradient(317deg, black 5%, #03ebe4 100%);
+  background: linear-gradient(133deg, black 5%, #03ebe4 100%); }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -335,7 +335,31 @@ body {
   min-height: 100vh; }
 
 .main {
-  max-width: 919px;
-  max-height: 448; }
+  max-width: 1200px; }
+
+.header {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0; }
+
+.form__button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px 0;
+  min-width: 120px;
+  min-height: 20px;
+  letter-spacing: 0,5px; }
+
+.form__label {
+  display: block;
+  font-size: 16px; }
+
+.form__message {
+  width: 100%;
+  border-radius: 6px;
+  background: #ffff;
+  border: 1px solid #03ebe4;
+  min-height: 25vh; }
 
 /*# sourceMappingURL=main.css.map */

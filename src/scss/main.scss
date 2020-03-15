@@ -6,8 +6,8 @@ html {
   box-sizing: border-box;
   font-family: "Maven Pro";
   background: rgb(0,0,0);
-background: linear-gradient(133deg, rgba(0,0,0,1) 15%, rgba(3,235,228,1) 100%);
-}
+background: linear-gradient(133deg, rgba(0,0,0,1) 5%, rgba(3,235,228,1) 100%);
+ }
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -22,6 +22,42 @@ min-height: 100vh;
 }
 
 .main{
-max-width: 919px;
-max-height: 448;
+max-width: 1200px;
+
+}
+
+.header{
+font-size: 32px;
+font-weight: 600;
+margin: 0;
+}
+
+.form{
+  &__button{
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 10px 0;
+    min-width: 120px;
+    min-height: 20px;
+    letter-spacing: 0,5px;
+    
+    &--save{
+     
+    }
+  }
+
+  &__label{
+display: block;
+font-size: 16px;
+  }
+&__message{
+  width: 100%;
+  border-radius: 6px;
+  background:#ffff;
+  border: 1px solid #03ebe4;
+  min-height: 25vh;
+}
+&__paragraph{
+
+}
 }
