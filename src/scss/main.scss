@@ -1,9 +1,12 @@
 @import "_normalize";
 @import "_variables";
 
-
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,600&display=swap&subset=latin-ext');
 html {
   box-sizing: border-box;
+  font-family: "Maven Pro";
+  background: rgb(0,0,0);
+background: linear-gradient(133deg, rgba(0,0,0,1) 15%, rgba(3,235,228,1) 100%);
 }
 
 *, *:before, *:after {
@@ -11,6 +14,14 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+color: #000;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+
+.main{
+max-width: 919px;
+max-height: 448;
 }
