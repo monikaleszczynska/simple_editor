@@ -1,63 +1,90 @@
 @import "_normalize";
 @import "_variables";
 
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,600&display=swap&subset=latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,600&display=swap&subset=latin-ext");
 html {
   box-sizing: border-box;
   font-family: "Maven Pro";
-  background: rgb(0,0,0);
-background: linear-gradient(133deg, rgba(0,0,0,1) 5%, rgba(3,235,228,1) 100%);
- }
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    124deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 4%,
+    rgba(0, 0, 0, 1) 22%,
+    rgba(3, 235, 228, 1) 99%
+  );
+}
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-color: #000;
-display: flex;
-align-items: center;
-justify-content: center;
-min-height: 100vh;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-.main{
-max-width: 1200px;
-
+.main {
+  max-width: 1200px;
 }
 
-.header{
-font-size: 32px;
-font-weight: 600;
-margin: 0;
+.header {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #06f0d0;
 }
 
-.form{
-  &__button{
+.form {
+  &__button {
     box-sizing: border-box;
-    border-radius: 4px;
+    border: 2px solid #06f0d0;
+    color: #06f0d0;
     padding: 10px 0;
-    min-width: 120px;
-    min-height: 20px;
-    letter-spacing: 0,5px;
-    
-    &--save{
-     
-    }
+    min-width: 130px;
+    min-height: 16px;
+    letter-spacing: 0, 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 40px;
+    padding: 8px 16px;
+    text-decoration: none;
+    background: none;
   }
 
-  &__label{
-display: block;
-font-size: 16px;
+  &__label {
+    display: block;
+    font-size: 14px;
+    color: #06f0d0;
+    font-weight: 100;
+    margin-bottom: 10px;
   }
-&__message{
-  width: 100%;
-  border-radius: 6px;
-  background:#ffff;
-  border: 1px solid #03ebe4;
-  min-height: 25vh;
-}
-&__paragraph{
+  &__message {
+    width: 500px;
+    border-radius: 6px;
+    background: #ffff;
+    border: 1px solid #ffffff;
+    min-height: 32vh;
+    padding: 8px;
+  }
 
+  &__paragraph {
+  }
 }
+.form__button:hover {
+  background: rgb(0,0,0);
+  background: linear-gradient(337deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 4%, rgba(0,0,0,1) 49%, rgba(3,235,228,1) 99%);
+  color: #ffff;
+}
+
+.form__click {
+  display: flex;
+  justify-content: flex-end;
+  background: none;
 }
