@@ -68,19 +68,20 @@ body {
   &__message {
     width: 500px;
     border-radius: 6px;
-    background: #ffff;
-    border: 1px solid #ffffff;
+    background: rgb(226, 214, 214);
+    border: 1px solid #ffff;
     min-height: 32vh;
     padding: 8px;
+    box-shadow: 5px 7px 10px;
   }
 
   &__paragraph {
   }
 }
 .form__button:hover {
-  background: rgb(0,0,0);
-  background: linear-gradient(337deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 4%, rgba(0,0,0,1) 49%, rgba(3,235,228,1) 99%);
-  color: #ffff;
+  background: #06f0d0;
+  color: #000;
+  border: 2px solid #ffff;
 }
 
 .form__click {
